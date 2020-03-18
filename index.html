@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GESTEM</title>
+    <!--  Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="icons/icomoon/style.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Jquery -->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <!-- Theme  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -21,11 +29,23 @@
       </div>
     </div>  
 
+    <!-- Mobile Header -->
+    <div class="site-wrap">
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div>
+       
+
     <!-- Header -->
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
-            <div class="site-logo"><a href="index.html" class="text-uppercase">Expert</a></div>
+            <div class="site-logo"><a href="index.html" class="text-uppercase">GESTEM</a></div>
             <div>
               <nav class="site-navigation position-relative text-right" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
@@ -47,11 +67,49 @@
           </div>
         </div> 
       </header>
+
+      <!-- Owl Carousel -->
+      <div class="intro-section custom-owl-carousel" id="home-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mr-auto" data-aos="fade-up">
+  
+              <div class="owl-carousel slide-one-item-alt-text">
+                <div class="slide-text">
+                  <h1>GESTEM</h1>
+                  <p class="mb-5">GESTEM es una división comercial de Grupo Fénix.</p>
+                </div>
+                <div class="slide-text">
+                  <h1>Consultores en Gestión empresarial.</h1>
+                  <p class="mb-5">La consultoría es un servicio de asesoría especializada e independiente al que recurren las empresas en diferentes industrias con el fin de encontrar soluciones a uno o más de sus problemas de negocio o necesidades empresariales, que se sustenta en la innovación, la experiencia, el conocimiento, las habilidades de los profesionales, los métodos y las herramientas.</p>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="100">
+                          
+              <div class="owl-carousel slide-one-item-alt">
+                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+              </div>
+  
+              <div class="owl-custom-direction">
+                <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
+                <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+     
     
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-      
+    <script src="js/owl.carousel.min.js"></script> 
 </body>
 </html>
