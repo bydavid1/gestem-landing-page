@@ -139,21 +139,21 @@ jQuery(document).ready(function($) {
 			   navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
 		   responsive:{
 		   600:{
-			   margin: 0,
+			   margin: 5,
 			   nav: true,
-			 items: 2
+			 items: 3
 		   },
 		   1000:{
-			   margin: 0,
+			   margin: 5,
 			   stagePadding: 0,
 			   nav: true,
 			 items: 3
 		   },
 		   1200:{
-			   margin: 0,
+			   margin: 5,
 			   stagePadding: 0,
 			   nav: true,
-			 items: 4
+			 items: 3
 		   }
 		   }
 		   });
