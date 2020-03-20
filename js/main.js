@@ -187,7 +187,7 @@ jQuery(document).ready(function($) {
 			   margin: 30,
 			   stagePadding: 0,
 			   nav: true,
-			 items: 4
+			 items: 3
 		   }
 		   }
 		   });

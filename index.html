@@ -1,172 +1,352 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GESTEM</title>
-    <!--  Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GESTEM</title>
+  <!--  Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="icons/icomoon/style.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Jquery -->
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <!-- Theme  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Owl Carousel-->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="icons/flaticon/font/flaticon.css">
-
-        <!-- Timeline  -->
-        <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="icons/icomoon/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Jquery -->
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <!-- Theme  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Owl Carousel-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<!-- Flaticon  -->
+  <link rel="stylesheet" href="icons/flaticon/font/flaticon.css">
+  <!-- Timeline  -->
+  <link rel="stylesheet" href="css/timeline.css">
 
 </head>
+
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    <!-- Loader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
-    </div>  
+  <!-- Loader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
 
-    <!-- Mobile Header -->
-    <div class="site-wrap">
-        <div class="site-mobile-menu site-navbar-target">
-          <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-              <span class="icon-close2 js-menu-toggle"></span>
-            </div>
-          </div>
-          <div class="site-mobile-menu-body"></div>
+  <!-- Mobile Header -->
+  <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-       
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
 
     <!-- Header -->
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center">
-            <div class="site-logo"><a href="index.html" class="text-uppercase">GESTEM</a></div>
-            <div>
-              <nav class="site-navigation position-relative text-right" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
-                  <li><a href="#home-section" class="nav-link">Inicio</a></li>
-                  <li><a href="#work-section" class="nav-link">Servicios</a></li>
-                  <li><a href="#process-section" class="nav-link">Procesos</a></li>
-                  <li><a href="#testimonials-section" class="nav-link">Testimonios</a></li>   
-                </ul>
-              </nav>
-            </div>
-            <div class="ml-auto">
-              <nav class="site-navigation position-relative text-right" role="navigation">
-                <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
-                  <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-danger rounded text-white border-danger">Contacto</span></a></li>
-                </ul>
-              </nav>
-              <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
-            </div>
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo"><a href="index.html" class="text-uppercase">GESTEM</a></div>
+          <div>
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+                <li><a href="#home-section" class="nav-link">Inicio</a></li>
+                <li><a href="#services-section" class="nav-link">Servicios</a></li>
+                <li><a href="#proccess-section" class="nav-link">Procesos</a></li>
+                <li><a href="#methodology-section" class="nav-link">Metodologia</a></li>
+                <li><a href="#testimonials-section" class="nav-link">Testimonios</a></li>
+              </ul>
+            </nav>
           </div>
-        </div> 
-      </header>
-
-      <!-- Owl Carousel -->
-      <div class="intro-section custom-owl-carousel" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-5 mr-auto" data-aos="fade-up">
-  
-              <div class="owl-carousel slide-one-item-alt-text">
-                <div class="slide-text">
-                  <h1>GESTEM</h1>
-                  <p class="mb-5">GESTEM es una división comercial de Grupo Fénix.</p>
-                </div>
-                <div class="slide-text">
-                  <h1>Consultores en Gestión empresarial.</h1>
-                  <p class="mb-5">La consultoría es un servicio de asesoría especializada e independiente al que recurren las empresas en diferentes industrias con el fin de encontrar soluciones a uno o más de sus problemas de negocio o necesidades empresariales, que se sustenta en la innovación, la experiencia, el conocimiento, las habilidades de los profesionales, los métodos y las herramientas.</p>
-                </div>
-              </div>
-  
-            </div>
-            <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="100">
-                          
-              <div class="owl-carousel slide-one-item-alt">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid">
-              </div>
-  
-              <div class="owl-custom-direction">
-                <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
-                <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
-              </div>
-  
-            </div>
+          <div class="ml-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
+                <li class="cta"><a href="#contact-section" class="nav-link"><span
+                      class="border bg-danger rounded text-white border-danger">Contacto</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span
+                class="icon-menu h3"></span></a>
           </div>
         </div>
       </div>
+    </header>
 
-       <!-- Services -->
-       <div class="site-section bg-light section-1" id="services-section" data-aos="fade">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 mb-5">
-              <h2 class="section-title">Services</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+    <!-- Owl Carousel -->
+    <div class="intro-section custom-owl-carousel" id="home-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mr-auto" data-aos="fade-up">
+            <div class="owl-carousel slide-one-item-alt-text">
+              <div class="slide-text">
+                <h1>GESTEM</h1>
+                <h3>Consultores en Gestión empresarial.</h3>
+                <p class="mb-5">GESTEM es una división comercial de Grupo Fénix. La consultoría es un servicio de asesoría especializada e independiente al que recurren
+                  las empresas en diferentes industrias con el fin de encontrar soluciones a uno o más de sus problemas
+                  de negocio o necesidades empresariales, que se sustenta en la innovación, la experiencia, el
+                  conocimiento, las habilidades de los profesionales, los métodos y las herramientas.</p>
+              </div>
             </div>
+
           </div>
-        </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="service col-md-12 mb-3">
-              <div>
-                <span class="custom-icon-wrap"><span class="flaticon-reload"></span></span>
-                <h3>Consultoría en Innovación Comercial</h3>
-                <h5>METODOLOGIA INN-COMER</h5>
-                <p>
-                  <ul>
-                    <li>
-                      INN-COMER es una metodología de Innovación Comercial diseñada  para la mejora de los esfuerzos realizados por las empresas para desarrollar de forma consciente el conjunto de técnicas y estudios que tienen como objeto mejorar la comercialización de un producto o servicios (marketing), evidenciando como mediante el uso de las herramientas de gestión empresarial.
-                    </li>
-                    <li>
-                      Marketing es el conjunto de técnicas y estudios que tienen como objeto mejorar la comercialización de un producto o servicios. La estrategia de producto depende ahora, en gran medida, de las decisiones del responsable o estratega de marketing on line.  
-                    <li>
-                      Es por eso que la metodología INN-COMER encierra técnicas experienciales a través de herramientas de gestión empresarial que permiten las empresas enfocarse y de esta forma disminuir esfuerzos en vano por alcanzar los objetivos comerciales.
-                    </li>
-                  </ul>
-                </p>
-              </div>
+          <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="owl-carousel slide-one-item-alt">
+              <img src="images/img_1.jpg" alt="Image" class="img-fluid">
             </div>
-            <div class="service col-md-6 col-sm-12">
-              <div>
-                <span class="custom-icon-wrap"><span class="flaticon-download"></span></span>
-                <h3>Consultoría en Transformación Digital</h3>
-                <p>Desarrollamos estrategias para la implementación de GSuite, Google Apps,  o servicios en la nube, donde se describe claramente la metodología de trabajo y actividades a realizarse para ayudar a tu empresa a experimentar la nueva forma de comunicación, movilidad y acceso a la información con la nube de Google.
-  
-                  GESTEM consultora especializada en Google Apps, Gestión Documental. Nuestra especialización y experiencia, nos ha permitido desarrollar un paquete de consultorí­a integral con el fin de ayudar a nuestros clientes a comprender el impacto que  los servicios en la nube pueden tener en sus empresas y equipos de trabajo y cómo su productividad se puede elevar al máximo.
-                  </p>
-              </div>
-            </div>
-            <div class="service col-md-6 col-sm-12">
-              <div>
-                <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
-                <h3>Consultoría Mype´s Lean Starup</h3>
-                <p>El método lean startup es el sistema utilizado para pasar de proyecto a empresa poniendo el foco en las necesidades del cliente, contando con su retroalimentación e ir modificando el producto hasta desarrollar la versión final. Es el concepto de moda en el mundo emprendedor, donde las pautas y recursos para desarrollar un proyecto es muy diferente a hacerlo en una gran compañía.
-                  “Si te equivocas hazlo pronto y barato”. Es una de las premisas del método lean-startup, donde la idea de negocio se va mejorando a base de prueba y error. Cuando antes detectemos el fallo, menos costes y repercusiones tendrá solucionarlo.
-                  </p>
-              </div>
-            </div>
+
+           <!-- <div class="owl-custom-direction">
+              <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
+              <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+            </div>-->
+
           </div>
         </div>
       </div>
+    </div>
 
-      
-    <div class="site-section section-2">
+    <!-- Services -->
+    <div class="site-section section-1" id="services-section" data-aos="fade">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 mr-auto mb-5"  data-aos="fade-up">
+          <div class="col-lg-6 mb-5">
+            <h2 class="section-title">Servicios</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam
+              voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias
+              blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mx-5">
+        <div class="row justify-content-center">
+          <div class="main-services col-md-5 mb-3">
+            <div>
+              <span class="custom-icon-wrap"><span class="flaticon-reload"></span></span>
+              <h3>Consultoría en Innovación Comercial</h3>
+              <h5>METODOLOGIA INN-COMER</h5>
+              <p>
+                <ul>
+                  <li>
+                    INN-COMER es una metodología de Innovación Comercial diseñada  para la mejora de los esfuerzos
+                    realizados por las empresas para desarrollar de forma consciente el conjunto de técnicas y estudios
+                    que tienen como objeto mejorar la comercialización de un producto o servicios (marketing),
+                    evidenciando como mediante el uso de las herramientas de gestión empresarial.
+                  </li>
+                  <li>
+                    Marketing es el conjunto de técnicas y estudios que tienen como objeto mejorar la comercialización
+                    de un producto o servicios. La estrategia de producto depende ahora, en gran medida, de las
+                    decisiones del responsable o estratega de marketing on line. 
+                  <li>
+                    Es por eso que la metodología INN-COMER encierra técnicas experienciales a través de herramientas de
+                    gestión empresarial que permiten las empresas enfocarse y de esta forma disminuir esfuerzos en vano
+                    por alcanzar los objetivos comerciales.
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="main-services col-md-4 col-sm-12">
+            <div>
+              <span class="custom-icon-wrap"><span class="flaticon-download"></span></span>
+              <h3>Consultoría en Transformación Digital</h3>
+              <p>Desarrollamos estrategias para la implementación de GSuite, Google Apps, o servicios en la nube, donde
+                se describe claramente la metodología de trabajo y actividades a realizarse para ayudar a tu empresa a
+                experimentar la nueva forma de comunicación, movilidad y acceso a la información con la nube de Google.
+
+                GESTEM consultora especializada en Google Apps, Gestión Documental. Nuestra especialización y
+                experiencia, nos ha permitido desarrollar un paquete de consultorí­a integral con el fin de ayudar a
+                nuestros clientes a comprender el impacto que los servicios en la nube pueden tener en sus empresas y
+                equipos de trabajo y cómo su productividad se puede elevar al máximo.
+              </p>
+            </div>
+          </div>
+          <div class="main-services col-md-3  col-sm-12">
+            <div>
+              <span class="custom-icon-wrap"><span class="flaticon-monitor"></span></span>
+              <h3>Consultoría Mype´s Lean Starup</h3>
+              <p>El método lean startup es el sistema utilizado para pasar de proyecto a empresa poniendo el foco en las
+                necesidades del cliente, contando con su retroalimentación e ir modificando el producto hasta
+                desarrollar la versión final. Es el concepto de moda en el mundo emprendedor, donde las pautas y
+                recursos para desarrollar un proyecto es muy diferente a hacerlo en una gran compañía.
+                “Si te equivocas hazlo pronto y barato”. Es una de las premisas del método lean-startup, donde la idea
+                de negocio se va mejorando a base de prueba y error. Cuando antes detectemos el fallo, menos costes y
+                repercusiones tendrá solucionarlo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Procesos -->
+    <div class="site-section bg-light" id="proccess-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5">
+            <h2 class="section-title">Procesos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. </p>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel nonloop-block-14">
+        <div class="service">
+          <div>
+            <h3>PASO 1.  EVALUACION DE LA ESTRATEGIA COMERCIAL </h3>
+            <p>(Observación de las Fortalezas y Gestión del Conocimiento)</p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Observación y evaluación</th>
+                  <th>Herramienta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Portafolio de productos y/o servicios</td>
+                  <td>BCG</td>
+                </tr>
+                <tr>
+                  <td>Segmentación de Clientes </td>
+                  <td>LEAN CANVAS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="service">
+          <div>
+            <h3>PASO 2.  OBSERVACIÓN LA COMPETITIVIDAD COMERCIAL </h3>
+            <p>(Manejo y Control de los impulsos externos e internos)</p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Observación y evaluación</th>
+                  <th style="width: 35%;">Herramienta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rivalidad en el mercado</td>
+                  <td>FODA</td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Productos de la competencia</li>
+                      <li>Proveedores</li>
+                      <li>Clientes</li>
+                      <li>Productos sustitutos</li>
+                      <li>Costos</li>
+                    </ul>
+                  </td>
+                  <td>MATRIZ DE POTENCIALIDADES</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="service">
+          <div>
+            <h3>PASO 3.  CREACIÓN DE ESTRATEGIAS COMERCIALES</h3>
+            <p>(Factores de éxito y equilibrio ajustado)</p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Acción</th>
+                  <th>Herramienta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Definición de ventaja competitiva</td>
+                  <td>BUYER PERSONA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="service">
+          <div>
+            <h3>PASO 4.  CRECIMIENTO ECONÓMICO
+            </h3>
+            <p>(Ecosistemas de acción)</p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Acción</th>
+                  <th>Herramienta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Creación de Alianzas estratégicas
+                      </li>
+                      <li>Visibilización  del valor percibido
+                      </li>
+                    </ul>
+                  </td>
+                  <td>CANVA PROPUESTA DE VALOR
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="service">
+          <div>
+            <h3>PASO 5.  CREACIÓN DE PLAN DE MKT DIGITAL
+            </h3>
+            <p>(Coherencia aplicada)</p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Acción</th>
+                  <th>Herramienta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>Análisis de la situación
+
+                      </li>
+                      <li>Objetivos y estrategias
+
+                      </li>
+                      <li>Plan de Acción (SEO, social media etc.)
+
+                      </li>
+                      <li>Presupuesto
+
+                      </li>
+                      <li>Medición y control
+
+                      </li>
+                    </ul>
+                  </td>
+                  <td>ELABORACIÓN DE PLAN DE MKT DIGITAL
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Metodologia -->
+    <div class="site-section" id="methodology-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mr-auto mb-5" data-aos="fade-up">
             <div class="mb-5">
               <h2 class="section-title">Metodología</h2>
               <!--first section-->
@@ -178,7 +358,7 @@
                   <h5>Ayudarte a encontrar las respuestas a las siguientes preguntas: </h5>
                   <p>Qué aplicaciones de negocio debes llevar a la Nube?
                     En qué momento debes hacer la migración?
-                    </p>
+                  </p>
                 </div>
               </div>
               <!--Line -->
@@ -187,7 +367,7 @@
                   <div class="corner top-right"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner left-bottom"></div>
@@ -197,7 +377,9 @@
               <div class="row align-items-center justify-content-end how-it-works d-flex">
                 <div class="col-6 text-right">
                   <h5>Implementación de servicios en la nube</h5>
-                  <p>La experiencia de nuestros consultores certificados implementando soluciones de servicios en la nube (cloud computing), como Gsuite(antes Google Apps), constituye una garantí­a de éxito para cualquier empresa que decida emprender tales proyectos.</p>
+                  <p>La experiencia de nuestros consultores certificados implementando soluciones de servicios en la
+                    nube (cloud computing), como Gsuite(antes Google Apps), constituye una garantí­a de éxito para
+                    cualquier empresa que decida emprender tales proyectos.</p>
                 </div>
                 <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                   <div class="circle font-weight-bold">Paso 2</div>
@@ -209,7 +391,7 @@
                   <div class="corner right-bottom"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner top-left"></div>
@@ -222,16 +404,17 @@
                 </div>
                 <div class="col-6">
                   <h5>Gestión integral de proyectos:</h5>
-                  <p>captura de requerimientos, análisis , diseño y configuración según sus necesidades, migración, implantación de la solución, gestión del cambio: comunicación y capacitación</p>
+                  <p>captura de requerimientos, análisis , diseño y configuración según sus necesidades, migración,
+                    implantación de la solución, gestión del cambio: comunicación y capacitación</p>
                 </div>
               </div>
-               <!--Line -->
+              <!--Line -->
               <div class="row timeline">
                 <div class="col-2">
                   <div class="corner top-right"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner left-bottom"></div>
@@ -241,7 +424,11 @@
               <div class="row align-items-center justify-content-end how-it-works d-flex">
                 <div class="col-6 text-right">
                   <h5>Asesoramiento</h5>
-                  <p>Nuestros consultores  de GESTión EMpresarial capturan los requisitos y requerimientos, mediante una HERRAMIENTA METODODOLÓGICA, para luego realizar un análisis de procesos de negocio y detectar oportunidades de mejora, entregando un documento final el cual describirá los tiempos perdidos, flujos repetitivos, las oportunidades de mejora recomendadas y la solución mas acertada para resolver los problemas de su Empresa.</p>
+                  <p>Nuestros consultores de GESTión EMpresarial capturan los requisitos y requerimientos, mediante una
+                    HERRAMIENTA METODODOLÓGICA, para luego realizar un análisis de procesos de negocio y detectar
+                    oportunidades de mejora, entregando un documento final el cual describirá los tiempos perdidos,
+                    flujos repetitivos, las oportunidades de mejora recomendadas y la solución mas acertada para
+                    resolver los problemas de su Empresa.</p>
                 </div>
                 <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                   <div class="circle font-weight-bold">Paso 4</div>
@@ -253,7 +440,7 @@
                   <div class="corner right-bottom"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner top-left"></div>
@@ -266,7 +453,10 @@
                 </div>
                 <div class="col-6">
                   <h5>Migración</h5>
-                  <p>Se migrará toda su información a la nube manteniendo todos sus archivos sin excepciones y con acceso desde cualquier dispositivo móvil, Computadora, Smartphone o tablet conectado a internet. Con la tecnología y seguridad de Google Cloud jamás perderá ningún archivo ni contacto de su empresa, administrando los accesos y permisos desde una consola de administrador.</p>
+                  <p>Se migrará toda su información a la nube manteniendo todos sus archivos sin excepciones y con
+                    acceso desde cualquier dispositivo móvil, Computadora, Smartphone o tablet conectado a internet. Con
+                    la tecnología y seguridad de Google Cloud jamás perderá ningún archivo ni contacto de su empresa,
+                    administrando los accesos y permisos desde una consola de administrador.</p>
                 </div>
               </div>
               <!--Line -->
@@ -275,7 +465,7 @@
                   <div class="corner top-right"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner left-bottom"></div>
@@ -285,7 +475,9 @@
               <div class="row align-items-center justify-content-end how-it-works d-flex">
                 <div class="col-6 text-right">
                   <h5>Implementación de la solución</h5>
-                  <p>Sus usuarios cambiarán sus aplicaciones de un día a otro de manera transparente, permitiendo apreciar los beneficios de la nube desde el primer momento, los sistemas en la nube están listos para usarse y son personalizables de acuerdo a sus requerimientos.</p>
+                  <p>Sus usuarios cambiarán sus aplicaciones de un día a otro de manera transparente, permitiendo
+                    apreciar los beneficios de la nube desde el primer momento, los sistemas en la nube están listos
+                    para usarse y son personalizables de acuerdo a sus requerimientos.</p>
                 </div>
                 <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                   <div class="circle font-weight-bold">Paso 6</div>
@@ -297,7 +489,7 @@
                   <div class="corner right-bottom"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner top-left"></div>
@@ -310,7 +502,9 @@
                 </div>
                 <div class="col-6">
                   <h5>Gestión del cambio</h5>
-                  <p>Se establece una comunicación permanente con los usuarios para ayudarlos a simplificar sus tareas y sacar el máximo provecho de las herramientas a fin de incrementar su productividad, motivando su participación con las tecnologías de la información, para darle un valor agregado a la empresa.</p>
+                  <p>Se establece una comunicación permanente con los usuarios para ayudarlos a simplificar sus tareas y
+                    sacar el máximo provecho de las herramientas a fin de incrementar su productividad, motivando su
+                    participación con las tecnologías de la información, para darle un valor agregado a la empresa.</p>
                 </div>
               </div>
               <!--Line -->
@@ -319,7 +513,7 @@
                   <div class="corner top-right"></div>
                 </div>
                 <div class="col-8">
-                  <hr/>
+                  <hr />
                 </div>
                 <div class="col-2">
                   <div class="corner left-bottom"></div>
@@ -329,7 +523,9 @@
               <div class="row align-items-center justify-content-end how-it-works d-flex">
                 <div class="col-6 text-right">
                   <h5>Formación</h5>
-                  <p>Se imparten las capacitaciones para certificar al personal en el uso de las herramientas y se apoya con talleres de vídeo en línea el aprendizaje de los mismos, también se entrega manuales impresos y demos de los productos para que puedan realizar pruebas y entrenamientos.</p>
+                  <p>Se imparten las capacitaciones para certificar al personal en el uso de las herramientas y se apoya
+                    con talleres de vídeo en línea el aprendizaje de los mismos, también se entrega manuales impresos y
+                    demos de los productos para que puedan realizar pruebas y entrenamientos.</p>
                 </div>
                 <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
                   <div class="circle font-weight-bold">Paso 8</div>
@@ -341,7 +537,8 @@
       </div>
     </div>
 
-    <div class="site-section section-2 bg-light" id="process-section" data-aos="fade">
+        <!-- Processs consultory -->
+    <div class="site-section bg-light" id="process-consultory-section" data-aos="fade">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5">
@@ -352,103 +549,119 @@
           <div class="process bg-white rounded">
             <div>
               <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Plantea una hipótesis</h3>
-                <p>Parte de un problema a resolver y explica por qué estaría dispuesto a pagar por tu oferta.
-                  Para identificar el problema/dolor, podemos realizar una serie de entrevistas a nuestros clientes potenciales e identificar qué les preocupa realmente. Debemos saber si el problema es lo suficientemente doloroso para atacarlo.</p>
+              <h3>Plantea una hipótesis</h3>
+              <p>Parte de un problema a resolver y explica por qué estaría dispuesto a pagar por tu oferta.
+                Para identificar el problema/dolor, podemos realizar una serie de entrevistas a nuestros clientes
+                potenciales e identificar qué les preocupa realmente. Debemos saber si el problema es lo suficientemente
+                doloroso para atacarlo.</p>
             </div>
           </div>
-            <div class="process bg-white rounded">
-              <div>
-                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Valida la hipótesis</h3>
-                <p>Desde crear un producto o servicio con las características mínimas básicas para comprobar si es lo que el mercado quiere hasta una demostración de cómo funciona, todo es posible. El objetivo es saber si la gente lo querría y lo compraría.
-                  Esta primera validación será de los “early adopters”, los primeros usuarios que lo utilizarán y los más susceptibles de probar cosas nuevas en nuestro sector.</p>
-              </div>
+          <div class="process bg-white rounded">
+            <div>
+              <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+              <h3>Valida la hipótesis</h3>
+              <p>Desde crear un producto o servicio con las características mínimas básicas para comprobar si es lo que
+                el mercado quiere hasta una demostración de cómo funciona, todo es posible. El objetivo es saber si la
+                gente lo querría y lo compraría.
+                Esta primera validación será de los “early adopters”, los primeros usuarios que lo utilizarán y los más
+                susceptibles de probar cosas nuevas en nuestro sector.</p>
+            </div>
           </div>
-            <div class="process bg-white rounded">
-              <div>
-                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Mide la hipótesis</h3>
-                <p>La mejor manera de saber qué métricas implementarás es identificando cuáles son los pasos a seguir para llegar hasta tu oferta y cuántas veces recurrieron a ellos para comprar.
-                  Es fundamental identificar las KPI de un producto, medirlas para saber si cumplimos objetivos y vamos perfeccionando nuestro producto.
-                  </p>
-              </div>
+          <div class="process bg-white rounded">
+            <div>
+              <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+              <h3>Mide la hipótesis</h3>
+              <p>La mejor manera de saber qué métricas implementarás es identificando cuáles son los pasos a seguir para
+                llegar hasta tu oferta y cuántas veces recurrieron a ellos para comprar.
+                Es fundamental identificar las KPI de un producto, medirlas para saber si cumplimos objetivos y vamos
+                perfeccionando nuestro producto.
+              </p>
             </div>
-            <div class="process bg-white rounded">
-              <div>
-                  <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-                  <h3>Genera un aprendizaje validado</h3>
-                  <p>Parte de un problema a resolver y explica por qué estaría dispuesto a pagar por tu oferta.
-                    Para identificar el problema/dolor, podemos realizar una serie de entrevistas a nuestros clientes potenciales e identificar qué les preocupa realmente. Debemos saber si el problema es lo suficientemente doloroso para atacarlo.</p>
-                </div>
+          </div>
+          <div class="process bg-white rounded">
+            <div>
+              <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+              <h3>Genera un aprendizaje validado</h3>
+              <p>Parte de un problema a resolver y explica por qué estaría dispuesto a pagar por tu oferta.
+                Para identificar el problema/dolor, podemos realizar una serie de entrevistas a nuestros clientes
+                potenciales e identificar qué les preocupa realmente. Debemos saber si el problema es lo suficientemente
+                doloroso para atacarlo.</p>
             </div>
-            <div class="process bg-white rounded">
-                <div>
-                  <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-                  <h3>Valida la hipótesis</h3>
-                  <p>Significa que habrás realizado ajustes y cambios tanto en el producto o servicio, como en el mercado, proveedores… aprendiendo del entorno al que va dirigido el producto.
-                    Es fundamental saber escuchar a todos los stakeholders (Personas implicadas directa o indirectamente en el producto/servicio) e incorporar su feedback.</p>
-                </div>
+          </div>
+          <div class="process bg-white rounded">
+            <div>
+              <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+              <h3>Valida la hipótesis</h3>
+              <p>Significa que habrás realizado ajustes y cambios tanto en el producto o servicio, como en el mercado,
+                proveedores… aprendiendo del entorno al que va dirigido el producto.
+                Es fundamental saber escuchar a todos los stakeholders (Personas implicadas directa o indirectamente en
+                el producto/servicio) e incorporar su feedback.</p>
             </div>
-              <div class="process bg-white rounded">
-                <div>
-                  <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-                  <h3>Ciclo repetitivo</h3>
-                  <p>Pones en marcha los pasos anteriores una vez más ya con un producto o servicio mejorado y volvemos a empezar.</p>
-                </div>
-              </div>
-        </div>
+          </div>
+          <div class="process bg-white rounded">
+            <div>
+              <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+              <h3>Ciclo repetitivo</h3>
+              <p>Pones en marcha los pasos anteriores una vez más ya con un producto o servicio mejorado y volvemos a
+                empezar.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-      <!-- Contac US -->
-      <div class="site-section" id="contact-section"  data-aos="fade">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0">
-              <img src="images/about_1.jpg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-md-6 mr-auto order-2 order-md-1">
-              <h2 class="section-title mb-3">Contactanos</h2>
-              <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              <form method="post">
-                <div class="form-group row">
-                  <div class="col-md-6 mb-4">
-                    <input type="text" class="form-control" placeholder="Nombres" required>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Apellidos" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <input type="email" class="form-control" placeholder="Email" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <textarea class="form-control" id="" cols="30" rows="10" placeholder="Ingresa tu mensaje" requireds></textarea>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-6">  
-                    <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Enviar mensaje">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+  <!-- Contac US -->
+  <div class="site-section" id="contact-section" data-aos="fade">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 order-1 order-md-2 mb-5 mb-md-0">
+          <img src="images/about_1.jpg" alt="Image" class="img-fluid">
         </div>
-      </div>     
-    
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script> 
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+        <div class="col-md-6 mr-auto order-2 order-md-1">
+          <h2 class="section-title mb-3">Contactanos</h2>
+          <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus
+            culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          <form method="post">
+            <div class="form-group row">
+              <div class="col-md-6 mb-4">
+                <input type="text" class="form-control" placeholder="Nombres" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Apellidos" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <textarea class="form-control" id="" cols="30" rows="10" placeholder="Ingresa tu mensaje"
+                  requireds></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6">
+                <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Enviar mensaje">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
