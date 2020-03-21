@@ -21,7 +21,7 @@
     height: 435px;
     position: absolute;
     top: 35px;
-    left: 32px;
+    left: 33px;
 }
 
   .liston-informacion {
@@ -57,6 +57,6 @@
 }
 
 .margin-x{
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
