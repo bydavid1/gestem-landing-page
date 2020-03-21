@@ -45,7 +45,8 @@
 
 .liston-informacion img{
     border-radius: 60%;
-    object-fit: contain;
+    max-height: 150px;
+    max-width: 120px;
     position: absolute;
     top: 14px;
     left: 150px;
