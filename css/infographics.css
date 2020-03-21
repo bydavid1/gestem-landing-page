@@ -1,0 +1,62 @@
+:root {
+    --circulo-hijo: rgba(255, 255, 255, 0.7);
+    --liston-info: #FFFFFF;
+    --liston-sombra: 5px 10px rgba(0,0,0, 0.2);
+  }
+  .infografia {
+    display: flex;
+  }
+  .circulo-padre {
+    background-color: #AD0306;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    position: relative
+}
+
+.circulo-hijo {
+    background-color:#F1F3F8;
+    border-radius: 50%;
+    width:435px;
+    height: 435px;
+    position: absolute;
+    top: 35px;
+    left: 32px;
+}
+
+  .liston-informacion {
+    position: absolute;
+    height: auto ;
+    padding-top: 170px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 100px;
+    width: 400px;
+    background-color: var(--liston-info);
+    top: 30px;
+    left: 14px;
+    border-radius: 190px 190px 190px 190px;
+    box-shadow: var(--liston-sombra);
+}
+
+.liston-informacion h4{
+  color: #AD0306;
+}
+
+.liston-informacion img{
+    border-radius: 60%;
+    max-height: 150px;
+    max-width: 120px;
+    position: absolute;
+    top: 14px;
+    left: 150px;
+}
+
+.space{
+  padding-bottom: 25rem;
+}
+
+.margin-x{
+  width: 80%;
+  margin: auto;
+}

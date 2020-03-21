@@ -1188,6 +1188,7 @@ h5,
 
 .section-1 {
   margin-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .work-thumb {
@@ -1807,4 +1808,8 @@ h5,
 }
 .icon.social.in i {
 	left:11px;
+}
+
+.owl-img{
+  height: 424px;
 }
