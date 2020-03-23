@@ -43,13 +43,17 @@
   color: #AD0306;
 }
 
+.liston-informacion p{
+    font-size: 16px;
+}
+
 .liston-informacion img{
     border-radius: 60%;
     max-height: 150px;
     max-width: 120px;
     position: absolute;
     top: 14px;
-    left: 150px;
+    left: 140px;
 }
 
 .space{
@@ -59,4 +63,169 @@
 .margin-x{
   width: 90%;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  p {
+    font-size: 14px;
+  }
+  .circulo-padre {
+    background-color: #AD0306;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: relative
+}
+
+.circulo-hijo {
+    background-color:#F1F3F8;
+    border-radius: 50%;
+    width:330px;
+    height: 330px;
+    position: absolute;
+    top: 34px;
+    left: 34px;
+}
+
+  .liston-informacion {
+    position: absolute;
+    height: auto ;
+    padding-top: 170px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 100px;
+    width: 300px;
+    background-color: var(--liston-info);
+    top: 30px;
+    left: 14px;
+    border-radius: 190px 190px 190px 190px;
+    box-shadow: var(--liston-sombra);
+}
+
+.space{
+  padding-bottom: 1000px;
+}
+}
+
+/* Infografia 2 */
+
+.main-card{
+  width: 330px;
+  height: 400px;
+  background: rgb(255,148,60);
+  background: linear-gradient(90deg, rgba(255,148,60,1) 0%, rgba(242,112,86,1) 51%, rgba(253,94,112,1) 100%);
+  border-radius: 30px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.main-card h4{
+  color: white;
+  margin-left: 20px;
+}
+
+.child-card{
+  background-color: white;
+  position: absolute;
+  width: 330px;
+  height: auto;
+  min-height: 70%;
+  top: 20%;
+  left: -20px;
+  border-radius: 5px 40px 40px 5px;
+  box-shadow: var(--liston-sombra);
+  padding: 7px;
+  border-left: solid #EAE9E7 2px;
+}
+
+.child-card table{
+  font-size: 15px;
+}
+
+.main-card span{
+  background-color: white;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #737085;
+  float: right;
+  margin-right: 30px;
+}
+
+/*---------------------------------------------------------- Infografia 3 */
+
+.card2{
+  width: 250px;
+  height: 700px;
+  position: relative;
+}
+
+.romb{
+  width: 150px; 
+  height: 150px; 
+  background: rgb(170,207,16);
+  background: -moz-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
+  background: linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aacf10",endColorstr="#61a919",GradientType=1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 12px;
+  position: absolute;
+}
+
+.header-romb{
+  width: 185px;
+  height: 100px;
+  top: 25px;
+  left: -5px;
+  background-color: white;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 5px 5px rgba(0,0,0, 0.2);
+}
+
+.header-romb h3{
+  float: left;
+  position: relative;
+  top: 34px;
+  left: 15px;
+}
+
+.circle-romb {
+  background: rgb(8, 236, 57);
+  left: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  float: right;
+  background: -moz-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
+  background: linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aacf10",endColorstr="#61a919",GradientType=1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card2-info{
+  padding: 5px;
+  width: 245px;
+  position: relative;
+  top: 180px;
+  left: -35px;
+}
+
+.card2-info h5{
+  color: #AD0306;
+}
+
+.card2-info p{
+  font-size: 16px;
 }
