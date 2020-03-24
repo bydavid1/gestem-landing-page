@@ -166,10 +166,6 @@
   width: 150px; 
   height: 150px; 
   background: rgb(170,207,16);
-  background: -moz-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
-  background: linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aacf10",endColorstr="#61a919",GradientType=1);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -177,6 +173,7 @@
   transform: rotate(45deg);
   border-radius: 12px;
   position: absolute;
+  box-shadow: 5px -5px rgba(0,0,0, 0.2);
 }
 
 .header-romb{
@@ -205,10 +202,6 @@
   border-radius: 50%;
   position: relative;
   float: right;
-  background: -moz-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
-  background: linear-gradient(90deg, rgba(170,207,16,1) 0%, rgba(97,169,25,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aacf10",endColorstr="#61a919",GradientType=1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,4 +221,62 @@
 
 .card2-info p{
   font-size: 16px;
+}
+
+/*---------------------------------------------------------- Infografia 4 */
+
+.card3 {
+  width: 345px;
+  height: 465px;
+  position: relative;
+}
+
+.top-div {
+  width: 100%;
+  height: 35%;
+  background-color: #FFFFFF;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 5px 5px rgba(0,0,0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-div {
+  padding-top: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 5px 5px rgba(0,0,0, 0.2);
+}
+
+.ribbon {
+  width: 350px;
+  height: 60px;
+  position: absolute;
+  left: -5px;
+  top: 30%;
+  border-radius: 30px 8px 30px 8px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.33);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ribbon h3{
+  color: white;
+}
+
+.bottom-div p{
+  font-size: 16px;
+  text-align: center;
+}
+
+.margin-row{
+  margin-top: 90px;
 }
